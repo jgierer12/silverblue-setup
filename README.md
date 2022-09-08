@@ -13,7 +13,7 @@
 2. Make sure you're up to date with `rpm-ostree update` and a reboot if necessary
 3. Clone this repo: `git clone https://github.com/jgierer12/silverblue-setup.git`
 4. `cd silverblue-setup`
-5. Edit the `files/applications.list` file to your liking
+5. Edit `files/flatpaks.list` and `files/rpm-overlays.list` to your liking
 6. Run the rpm installation script: `./install-rpm.sh`
 7. Get a coffee, and then reboot your computer
 8. Run the flatpak installation script: `./install-flatpak.sh`
