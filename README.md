@@ -14,9 +14,9 @@
 3. Clone this repo: `git clone https://github.com/jgierer12/silverblue-setup.git`
 4. `cd silverblue-setup`
 5. Edit `files/flatpaks.list` and `files/rpm-overlays.list` to your liking
-6. Run the rpm installation script: `./install-rpm.sh`
+6. Run the rpm installation script: `./00-rpm.sh`
 7. Get a coffee, and then reboot your computer
-8. Run the flatpak installation script: `./install-flatpak.sh`
+8. Run the flatpak installation script: `./01-flatpak.sh`
 9. To finish tailscale setup, run `sudo systemctl enable --now tailscaled` and then `sudo tailscale up`
 
 ## Todo
