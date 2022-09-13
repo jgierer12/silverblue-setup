@@ -22,6 +22,14 @@
    1. `./01-flatpak.sh`
    2. `./02-fonts.sh`
 
+## Automatic updates
+
+Both rpm-ostree and flatpaks are regularly updated automatically, which means the system requires close to zero maintenance. Silverblue creates a backup snapshot before every rpm-ostree upgrade, so if there is a problem, you can usually fix it by rebooting into an older snapshot.
+
+rpm-ostree requires a reboot to apply staged upgrades. It is recommended to shutdown or reboot somewhat regularly. Personally I shut down my PCs every evening.
+
+To preview staged rpm-ostree upgrades, run `rpm-ostree status -v`. To see a history of recently updated flatpaks, run `journalctl -u flatpak-automatic.service --reverse`.
+
 ## Todo
 
 - [x] rpm setup
