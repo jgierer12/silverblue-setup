@@ -14,6 +14,7 @@ while ! rpm-ostree status | grep ^State | grep idle > /dev/null; do
 done
 
 echo "Removing Firefox from base layer..."
+rpm-ostree override remove firefox-langpacks &> /dev/null || true # F37+
 rpm-ostree override remove firefox &> /dev/null || true
 
 if [ ! -e /etc/yum.repos.d/tailscale.repo ]; then
