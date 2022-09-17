@@ -16,10 +16,5 @@ curl -Lo /tmp/fonts/jbm.zip $(curl -sL https://api.github.com/repos/JetBrains/Je
 unzip -q /tmp/fonts/jbm.zip -d /tmp/fonts/jbm
 cp -r "/tmp/fonts/jbm/fonts/ttf" "/usr/local/share/fonts/JetBrains Mono"
 
-echo "Installing JetBrains Mono Nerd Font..."
-curl -Lo /tmp/fonts/jbm-nf.zip $(curl -sL https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest | jq -r '.assets[] | select(.name=="JetBrainsMono.zip") | .browser_download_url')
-unzip -q /tmp/fonts/jbm-nf.zip -d /tmp/fonts/jbm-nf
-cp -r "/tmp/fonts/jbm-nf" "/usr/local/share/fonts/JetBrains Mono Nerd Font"
-
 fc-cache
 rm -rf /tmp/fonts
