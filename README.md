@@ -21,6 +21,7 @@
 7. Run the rest of the installation scripts:
    1. `./01-flatpak.sh`
    2. `./02-fonts.sh`
+   3. `./03-distrobox.sh`
 
 ## Automatic updates
 
@@ -35,9 +36,10 @@ To preview staged rpm-ostree upgrades, run `rpm-ostree status -v`. To see a hist
 - [x] rpm setup
 - [x] flatpak setup
 - [x] fonts
+- [ ] config files
 - [ ] GNOME extensions
 - [ ] GNOME tweaks
-- [ ] distrobox setup
+- [x] distrobox setup
 - [ ] instructions for using vscode with distrobox
 
 ## Credits
