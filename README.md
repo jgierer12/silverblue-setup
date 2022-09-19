@@ -20,8 +20,7 @@
    3. To finish tailscale setup, run `sudo systemctl enable --now tailscaled` and then `sudo tailscale up`
 7. Run the rest of the installation scripts:
    1. `./01-flatpak.sh`
-   2. `./02-fonts.sh`
-   3. `./03-distrobox.sh`
+   2. `./02-distrobox.sh`
 
 ## Automatic updates
 
