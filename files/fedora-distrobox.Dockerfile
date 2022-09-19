@@ -3,7 +3,7 @@ FROM fedora:36
 RUN dnf upgrade -y
 
 # shell and prompt
-RUN dnf install -y util-linux-user langpacks-en fish
+RUN dnf install -y util-linux-user langpacks-en fish flatpak-spawn
 RUN chsh -s /usr/bin/fish
 RUN curl -sS https://starship.rs/install.sh | sh -s -- -y
 
