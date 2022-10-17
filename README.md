@@ -40,6 +40,8 @@ To preview staged rpm-ostree upgrades, run `rpm-ostree status -v`. To see a hist
 - [ ] GNOME tweaks
 - [x] distrobox setup
 - [ ] instructions for using vscode with distrobox
+- [ ] ~/.local/share/{icons,fonts,applications}
+- [ ] ~/.local/bin
 
 ## Credits
 
